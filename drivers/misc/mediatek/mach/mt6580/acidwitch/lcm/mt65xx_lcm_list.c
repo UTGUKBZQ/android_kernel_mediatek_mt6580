@@ -17,7 +17,6 @@
 #else
 #define LCD_DEBUG(fmt)  printk(fmt)
 #endif
-
 extern LCM_DRIVER otm1282a_hd720_dsi_vdo_60hz_lcm_drv;
 extern LCM_DRIVER otm1282a_hd720_dsi_vdo_lcm_drv;
 extern LCM_DRIVER vvx10f008b00_wuxga_dsi_vdo_lcm_drv;
@@ -103,12 +102,6 @@ extern LCM_DRIVER hx8369_mcu_6572_lcm_drv;
 extern LCM_DRIVER hx8369a_wvga_dsi_cmd_drv;
 extern LCM_DRIVER hx8369a_wvga_dsi_vdo_drv;
 extern LCM_DRIVER hx8392a_dsi_cmd_lcm_drv;
-extern LCM_DRIVER hx8392a_dsi_cmd_3lane_lcm_drv;
-extern LCM_DRIVER hx8392a_dsi_cmd_wvga_lcm_drv;
-extern LCM_DRIVER hx8392a_dsi_cmd_fwvga_lcm_drv;
-extern LCM_DRIVER hx8392a_dsi_cmd_qhd_lcm_drv;
-extern LCM_DRIVER hx8392a_dsi_vdo_lcm_drv;
-extern LCM_DRIVER hx8392a_dsi_vdo_3lane_lcm_drv;
 extern LCM_DRIVER nt35590_hd720_dsi_vdo_truly_lcm_drv;
 extern LCM_DRIVER ssd2075_hd720_dsi_vdo_truly_lcm_drv;
 extern LCM_DRIVER nt35590_hd720_dsi_cmd_drv;
@@ -133,23 +126,17 @@ extern LCM_DRIVER nt35596_fhd_dsi_vdo_truly_lcm_drv;
 extern LCM_DRIVER nt35595_fhd_dsi_vdo_truly_lcm_drv;
 extern LCM_DRIVER nt35595_fhd_dsi_cmd_truly_lcm_drv;
 extern LCM_DRIVER nt35595_fhd_dsi_cmd_truly_tps65132_lcm_drv;
-extern LCM_DRIVER nt35595_fhd_dsi_vdo_truly_tps65132_lcm_drv;
-extern LCM_DRIVER nt35595_fhd_dsi_vdo_truly_nt50358_lcm_drv;
 extern LCM_DRIVER nt35595_fhd_dsi_cmd_truly_nt50358_lcm_drv;
 extern LCM_DRIVER nt35595_fhd_dsi_cmd_truly_nt50358_720p_lcm_drv;
+extern LCM_DRIVER nt35595_fhd_dsi_vdo_truly_nt50358_lcm_drv;
 extern LCM_DRIVER nt35595_fhd_dsi_cmd_truly_nt50358_qhd_lcm_drv;
 extern LCM_DRIVER nt35595_fhd_dsi_cmd_truly_nt50358_fwvga_lcm_drv;
 extern LCM_DRIVER nt35595_fhd_dsi_cmd_truly_nt50358_wvga_lcm_drv;
 extern LCM_DRIVER nt35595_fhd_dsi_cmd_truly_tps65132_720p_lcm_drv;
-extern LCM_DRIVER nt35595_fhd_dsi_cmd_truly_nt50358_6735_lcm_drv;
-extern LCM_DRIVER nt35595_fhd_dsi_cmd_truly_nt50358_6735_720p_lcm_drv;
 extern LCM_DRIVER nt35596_fhd_dsi_vdo_yassy_lcm_drv;
 extern LCM_DRIVER nt35596_hd720_dsi_vdo_truly_tps65132_lcm_drv;
 extern LCM_DRIVER nt35590_hd720_dsi_cmd_truly2_lcm_drv;
 extern LCM_DRIVER otm9608_wvga_dsi_cmd_drv;
-extern LCM_DRIVER otm9608_fwvga_dsi_cmd_drv;
-extern LCM_DRIVER otm9608_qhd_dsi_cmd_drv;
-extern LCM_DRIVER otm9608_qhd_dsi_vdo_drv;
 extern LCM_DRIVER nt35510_dbi_18bit_gionee_lcm_drv;
 extern LCM_DRIVER otm8009a_fwvga_dsi_cmd_tianma_lcm_drv;
 extern LCM_DRIVER otm8009a_fwvga_dsi_vdo_tianma_lcm_drv;
@@ -158,10 +145,8 @@ extern LCM_DRIVER cm_otc3108bhv161_dsi_vdo_lcm_drv;
 extern LCM_DRIVER auo_b079xat02_dsi_vdo_lcm_drv;
 extern LCM_DRIVER hx8389b_qhd_dsi_vdo_tianma055xdhp_lcm_drv;
 extern LCM_DRIVER cpt_claa101fp01_dsi_vdo_lcm_drv;
-extern LCM_DRIVER cpt_claa101fp01_dsi_vdo_8163_lcm_drv;
 extern LCM_DRIVER h070d_18dm_lcm_drv;
 extern LCM_DRIVER hx8394a_hd720_dsi_vdo_tianma_lcm_drv;
-extern LCM_DRIVER hx8394d_hd720_dsi_vdo_tianma_lcm_drv;
 extern LCM_DRIVER cpt_clap070wp03xg_sn65dsi83_lcm_drv;
 extern LCM_DRIVER nt35520_hd720_tm_lcm_drv;
 extern LCM_DRIVER nt35520_hd720_boe_lcm_drv;
@@ -190,102 +175,26 @@ extern LCM_DRIVER nt35590_dsi_cmd_6571_qhd_lcm_drv;
 extern LCM_DRIVER it6151_edp_dsi_video_sharp_lcm_drv; 
 extern LCM_DRIVER nt35517_qhd_dsi_vdo_lcm_drv;
 extern LCM_DRIVER otm1283a_hd720_dsi_vdo_tm_lcm_drv;
-extern LCM_DRIVER otm1284a_hd720_dsi_vdo_tm_lcm_drv;
-extern LCM_DRIVER otm1285a_hd720_dsi_vdo_tm_lcm_drv;
 extern LCM_DRIVER hx8389b_qhd_dsi_vdo_lgd_lcm_drv;
 extern LCM_DRIVER it6151_fhd_edp_dsi_video_auo_lcm_drv;
 extern LCM_DRIVER tf070mc_rgb_v18_mt6571_lcm_drv;
 extern LCM_DRIVER zs070ih5015b3h6_mt6571_lcm_drv;
 extern LCM_DRIVER a080ean01_dsi_vdo_lcm_drv;
 extern LCM_DRIVER it6121_g156xw01v1_lvds_vdo_lcm_drv;
-extern LCM_DRIVER cpt_clap070wp03xg_lvds_lcm_drv;
-extern LCM_DRIVER r63315_fhd_dsi_vdo_truly_lcm_drv;
-extern LCM_DRIVER it6151_lp079qx1_edp_dsi_video_lcm_drv;
-extern LCM_DRIVER RX_498HX_615B_lcm_drv;
-extern LCM_DRIVER RX_498HX_615B_82_lcm_drv;
-extern LCM_DRIVER ili9806c_dsi_vdo_djn_fwvga_lcm_drv;
-extern LCM_DRIVER hx8389b_hd720_dsi_vdo_drv;
-extern LCM_DRIVER r69338_hd720_dsi_vdo_jdi_drv;
-extern LCM_DRIVER r69338_hd720_5in_dsi_vdo_jdi_dw8768_drv;
-extern LCM_DRIVER db7436_dsi_vdo_fwvga_drv;
-extern LCM_DRIVER r63417_fhd_dsi_cmd_truly_nt50358_lcm_drv;
-extern LCM_DRIVER r63417_fhd_dsi_cmd_truly_nt50358_720p_lcm_drv;
-extern LCM_DRIVER r63417_fhd_dsi_cmd_truly_nt50358_qhd_lcm_drv;
-extern LCM_DRIVER r63417_fhd_dsi_vdo_truly_nt50358_lcm_drv;
-extern LCM_DRIVER r63419_wqhd_truly_phantom_cmd_lcm_drv;
-extern LCM_DRIVER r63419_wqhd_truly_phantom_vdo_lcm_drv;
-extern LCM_DRIVER r63419_fhd_truly_phantom_lcm_drv;
-extern LCM_DRIVER r63423_wqhd_truly_phantom_lcm_drv;
-extern LCM_DRIVER kr101ia2s_dsi_vdo_lcm_drv;
-extern LCM_DRIVER kr070ia4t_dsi_vdo_lcm_drv;
-extern LCM_DRIVER r69338_hd720_dsi_vdo_jdi_dw8755a_drv;
-extern LCM_DRIVER otm9605a_qhd_dsi_vdo_drv;
-extern LCM_DRIVER ili9806e_dsi_vdo_fwvga_drv;
-extern LCM_DRIVER otm1906a_fhd_dsi_cmd_auto_lcm_drv;
-extern LCM_DRIVER clap070wp03xg_lvds_8163_lcm_drv;
-extern LCM_DRIVER nt35523_wxga_dsi_vdo_boe_lcm_drv;
-extern LCM_DRIVER otm1906b_fhd_dsi_cmd_jdi_tps65132_lcm_drv;
-extern LCM_DRIVER s6e3fa2_fhd1080_dsi_vdo_lcm_drv;
-extern LCM_DRIVER nt35523_wsvga_dsi_vdo_boe_lcm_drv;
-extern LCM_DRIVER ek79023_dsi_wsvga_vdo_lcm_drv;
-extern LCM_DRIVER nt35532_fhd_dsi_vdo_sharp_lcm_drv;
-extern LCM_DRIVER s6d7aa0_wxga_dsi_vdo_lcm_drv;
-extern LCM_DRIVER hx8394c_wxga_dsi_vdo_lcm_drv;
-extern LCM_DRIVER it6151_lp079qx1_edp_dsi_video_8163evb_lcm_drv;
-extern LCM_DRIVER sy20810800210132_wuxga_dsi_vdo_lcm_drv;
 
-extern LCM_DRIVER nt35510_dsi_cmd_lcm_drv;
-extern LCM_DRIVER rm69032_dsi_cmd_lcm_drv;
-extern LCM_DRIVER st7789h2_dbi_lcm_drv;
-extern LCM_DRIVER ek79007_wsvgalnl_dsi_vdo_lcm_drv;
-extern LCM_DRIVER nt35521_wxga_innolux_lcm_drv;
-extern LCM_DRIVER hx8394d_wxga_kd_lcm_drv;
-extern LCM_DRIVER jd9366_ivo_ips_dsi_lcm_drv;
-
-LCM_DRIVER* lcm_driver_list[] =
+LCM_DRIVER* lcm_driver_list[] = 
 {
-#if defined(JD9366_IVO_IPS_DSI)
-	&jd9366_ivo_ips_dsi_lcm_drv,
-#endif	
-#if defined(OTM1284A_HD720_DSI_VDO_TM)
-	&otm1284a_hd720_dsi_vdo_tm_lcm_drv,
-#endif
-#if defined(OTM1285A_HD720_DSI_VDO_TM)
-	&otm1285a_hd720_dsi_vdo_tm_lcm_drv,
-#endif
-
-#if defined(EK79007_WSVGALNL_DSI_VDO)
-	&ek79007_wsvgalnl_dsi_vdo_lcm_drv,
-#endif
-
-#if defined(S6E3FA2_FHD1080_DSI_VDO)
-	&s6e3fa2_fhd1080_dsi_vdo_lcm_drv,
-#endif
-
 #if defined(OTM1283A_HD720_DSI_VDO_TM)
 	&otm1283a_hd720_dsi_vdo_tm_lcm_drv,
-#endif
-
-#if defined(IT6151_LP079QX1_EDP_DSI_VIDEO)
-    &it6151_lp079qx1_edp_dsi_video_lcm_drv,
 #endif
 
 #if defined(VVX10F008B00_WUXGA_DSI_VDO)
 	&vvx10f008b00_wuxga_dsi_vdo_lcm_drv,
 #endif
 
-#if defined(KR101IA2S_DSI_VDO)
-	&kr101ia2s_dsi_vdo_lcm_drv,
-#endif
-
-#if defined(KR070IA4T_DSI_VDO)
-	&kr070ia4t_dsi_vdo_lcm_drv,
-#endif
-
 #if defined(HX8394A_HD720_DSI_VDO_TIANMA_V2)
     &hx8394a_hd720_dsi_vdo_tianma_v2_lcm_drv,
 #endif
-
 #if defined(OTM1283A)
 	 &otm1283a_6589_hd_dsi,
 #endif
@@ -311,18 +220,10 @@ LCM_DRIVER* lcm_driver_list[] =
 #if defined(R63311_FHD_DSI_VDO)
 	&r63311_fhd_dsi_vedio_lcm_drv,
 #endif
-
-#if defined(R63315_FHD_DSI_VDO_TRULY)
-	&r63315_fhd_dsi_vdo_truly_lcm_drv,
-#endif
-
 #if defined(NT35517_QHD_DSI_VDO)
 	&nt35517_dsi_vdo_lcm_drv,
 #endif
 
-#if defined(ILI9806E_DSI_VDO_FWVGA)
-	&ili9806e_dsi_vdo_fwvga_drv,
-#endif
 
 #if defined(LP079X01)
 	&lp079x01_lcm_drv,
@@ -386,14 +287,6 @@ LCM_DRIVER* lcm_driver_list[] =
 
 #if defined(NT35582_RGB_6575)
 	&nt35582_rgb_6575_lcm_drv,
-#endif
-
-#if defined(NT35521_WXGA_DSI_VIDEO_INNOLUX)
-  &nt35521_wxga_innolux_lcm_drv,
-#endif
-
-#if defined(HX8394D_WXGA_DSI_VIDEO_KD)
-  &hx8394d_wxga_kd_lcm_drv,
 #endif
 
 #if  defined(NT51012_HD720_DSI_VDO) 
@@ -603,10 +496,6 @@ LCM_DRIVER* lcm_driver_list[] =
 	&hx8389b_qhd_dsi_vdo_drv,
 #endif
 
-#if defined(HX8389B_HD720_DSI_VDO)
-	&hx8389b_hd720_dsi_vdo_drv,
-#endif
-
 #if defined(GN_SSD2825_SMD_S6E8AA)
 	&gn_ssd2825_smd_s6e8aa,
 #endif
@@ -666,30 +555,6 @@ LCM_DRIVER* lcm_driver_list[] =
   &hx8392a_dsi_cmd_lcm_drv,
 #endif 
 
-#if defined(HX8392A_DSI_CMD_3LANE)
-  &hx8392a_dsi_cmd_3lane_lcm_drv,
-#endif 
-
-#if defined(HX8392A_DSI_CMD_WVGA)
-  &hx8392a_dsi_cmd_wvga_lcm_drv,
-#endif 
-
-#if defined(HX8392A_DSI_CMD_FWVGA)
-  &hx8392a_dsi_cmd_fwvga_lcm_drv,
-#endif 
-
-#if defined(HX8392A_DSI_CMD_QHD)
-  &hx8392a_dsi_cmd_qhd_lcm_drv,
-#endif 
-
-#if defined(HX8392A_DSI_VDO)
-  &hx8392a_dsi_vdo_lcm_drv,
-#endif
-
-#if defined(HX8392A_DSI_VDO_3LANE)
-  &hx8392a_dsi_vdo_3lane_lcm_drv,
-#endif
-
 #if defined(NT35516_QHD_DSI_CMD_IPSBOE)
   &nt35516_qhd_dsi_cmd_ipsboe_lcm_drv,
 #endif
@@ -728,10 +593,6 @@ LCM_DRIVER* lcm_driver_list[] =
 
 #if defined(CM_N070ICE_DSI_VDO)
     &cm_n070ice_dsi_vdo_lcm_drv,
-#endif
-
-#if defined(CM_N070ICE_DSI_VDO_MT8135)
-    &cm_n070ice_dsi_vdo_mt8135_lcm_drv,
 #endif
 
 #if defined(CM_OTC3108BH161_DSI_VDO)
@@ -774,10 +635,6 @@ LCM_DRIVER* lcm_driver_list[] =
 	&nt35595_fhd_dsi_cmd_truly_tps65132_lcm_drv,
 #endif
 
-#if defined(NT35595_FHD_DSI_VDO_TRULY_TPS65132)
-	&nt35595_fhd_dsi_vdo_truly_tps65132_lcm_drv,
-#endif
-
 #if defined(NT35595_FHD_DSI_CMD_TRULY_TPS65132_720P)
 	&nt35595_fhd_dsi_cmd_truly_tps65132_720p_lcm_drv,
 #endif
@@ -790,12 +647,12 @@ LCM_DRIVER* lcm_driver_list[] =
 	&nt35595_fhd_dsi_cmd_truly_nt50358_lcm_drv,
 #endif
 
-#if defined(NT35595_FHD_DSI_VDO_TRULY_NT50358)
-	&nt35595_fhd_dsi_vdo_truly_nt50358_lcm_drv,
-#endif
-
 #if defined(NT35595_FHD_DSI_CMD_TRULY_NT50358_720P)
 	&nt35595_fhd_dsi_cmd_truly_nt50358_720p_lcm_drv,
+#endif
+
+#if defined(NT35595_FHD_DSI_VDO_TRULY_NT50358)
+	&nt35595_fhd_dsi_vdo_truly_nt50358_lcm_drv,
 #endif
 
 #if defined(NT35595_FHD_DSI_CMD_TRULY_NT50358_QHD)
@@ -810,14 +667,6 @@ LCM_DRIVER* lcm_driver_list[] =
 	&nt35595_fhd_dsi_cmd_truly_nt50358_wvga_lcm_drv,
 #endif
 
-#if defined(NT35595_FHD_DSI_CMD_TRULY_NT50358_6735)
-	&nt35595_fhd_dsi_cmd_truly_nt50358_6735_lcm_drv,
-#endif
-
-#if defined(NT35595_FHD_DSI_CMD_TRULY_NT50358_6735_720P)
-	&nt35595_fhd_dsi_cmd_truly_nt50358_6735_720p_lcm_drv,
-#endif
-
 #if defined(NT35596_FHD_DSI_VDO_YASSY)
 	&nt35596_fhd_dsi_vdo_yassy_lcm_drv,
 #endif
@@ -829,21 +678,8 @@ LCM_DRIVER* lcm_driver_list[] =
 #if defined(AUO_B079XAT02_DSI_VDO)
     &auo_b079xat02_dsi_vdo_lcm_drv,
 #endif
-
 #if defined(OTM9608_WVGA_DSI_CMD)
-    &otm9608_wvga_dsi_cmd_drv,
-#endif
-
-#if defined(OTM9608_FWVGA_DSI_CMD)
-    &otm9608_fwvga_dsi_cmd_drv,
-#endif
-
-#if defined(OTM9608_QHD_DSI_CMD)
-    &otm9608_qhd_dsi_cmd_drv,
-#endif
-
-#if defined(OTM9608_QHD_DSI_VDO)
-    &otm9608_qhd_dsi_vdo_drv,
+	&otm9608_wvga_dsi_cmd_drv,
 #endif
 
 #if defined(NT35510_DBI_18BIT_GIONEE)
@@ -869,10 +705,6 @@ LCM_DRIVER* lcm_driver_list[] =
     &cpt_claa101fp01_dsi_vdo_lcm_drv,
 #endif
 
-#if defined(CPT_CLAA101FP01_DSI_VDO_8163)
-    &cpt_claa101fp01_dsi_vdo_8163_lcm_drv,
-#endif
-
 #if defined(IT6151_EDP_DSI_VIDEO_SHARP)
     &it6151_edp_dsi_video_sharp_lcm_drv,
 #endif
@@ -892,9 +724,6 @@ LCM_DRIVER* lcm_driver_list[] =
 #if defined(NT35521_HD720_DSI_VIDEO_TM)
   &nt35521_hd720_tm_lcm_drv,
 #endif
-#if defined(R69338_HD720_DSI_VDO_JDI_DW8755A)
-  &r69338_hd720_dsi_vdo_jdi_dw8755a_drv,
-#endif
 #if defined(H070D_18DM)
     &h070d_18dm_lcm_drv,
 #endif
@@ -902,9 +731,6 @@ LCM_DRIVER* lcm_driver_list[] =
     &r69429_wuxga_dsi_vdo_lcm_drv,
 #endif
 
-#if defined(HX8394D_HD720_DSI_VDO_TIANMA)
-	&hx8394d_hd720_dsi_vdo_tianma_lcm_drv,
-#endif
 
 #if defined(HX8394A_HD720_DSI_VDO_TIANMA)
 	&hx8394a_hd720_dsi_vdo_tianma_lcm_drv,
@@ -934,16 +760,8 @@ LCM_DRIVER* lcm_driver_list[] =
 	&hx8369_dsi_vdo_6571_lcm_drv,
 #endif
 
-#if defined(RX_498HX_615B_82)
-	&RX_498HX_615B_82_lcm_drv,
-#endif
-
 #if defined(HX8369_DBI_6571)
 	&hx8369_dbi_6571_lcm_drv,
-#endif
-
-#if defined(RX_498HX_615B)
-	&RX_498HX_615B_lcm_drv,
 #endif
 
 #if defined(HX8369_DPI_6571)
@@ -1001,114 +819,6 @@ LCM_DRIVER* lcm_driver_list[] =
 #if defined(IT6121_G156XW01V1_LVDS_VDO)
     &it6121_g156xw01v1_lvds_vdo_lcm_drv,
 #endif
-
-#if defined(ILI9806C_DSI_VDO_DJN_FWVGA)
-    &ili9806c_dsi_vdo_djn_fwvga_lcm_drv,
-#endif
-
-#if defined(R69338_HD720_DSI_VDO_JDI)
-	&r69338_hd720_dsi_vdo_jdi_drv,
-#endif
-
-#if defined(R69338_HD720_5IN_DSI_VDO_JDI_DW8768)
-	&r69338_hd720_5in_dsi_vdo_jdi_dw8768_drv,
-#endif
-
-#if defined(DB7436_DSI_VDO_FWVGA)
-	&db7436_dsi_vdo_fwvga_drv,
-#endif
-
-#if defined(R63417_FHD_DSI_CMD_TRULY_NT50358)
-    &r63417_fhd_dsi_cmd_truly_nt50358_lcm_drv,
-#endif
-
-#if defined(R63417_FHD_DSI_CMD_TRULY_NT50358_720P)
-    &r63417_fhd_dsi_cmd_truly_nt50358_720p_lcm_drv,
-#endif
-
-#if defined(R63417_FHD_DSI_CMD_TRULY_NT50358_QHD)
-    &r63417_fhd_dsi_cmd_truly_nt50358_qhd_lcm_drv,
-#endif
-
-#if defined(R63417_FHD_DSI_VDO_TRULY_NT50358)
-    &r63417_fhd_dsi_vdo_truly_nt50358_lcm_drv,
-#endif
-
-#if defined(R63419_WQHD_TRULY_PHANTOM_2K_CMD_OK)
-    &r63419_wqhd_truly_phantom_cmd_lcm_drv,
-#endif
-
-#if defined(R63419_WQHD_TRULY_PHANTOM_2K_VDO_OK)
-    &r63419_wqhd_truly_phantom_vdo_lcm_drv,
-#endif
-
-#if defined(R63419_FHD_TRULY_PHANTOM_2K_CMD_OK)
-    &r63419_fhd_truly_phantom_lcm_drv,
-#endif
-
-#if defined(R63423_WQHD_TRULY_PHANTOM_2K_CMD_OK)
-    &r63423_wqhd_truly_phantom_lcm_drv,
-#endif
-
-#if defined(NT35523_WXGA_DSI_VDO_BOE)
-    &nt35523_wxga_dsi_vdo_boe_lcm_drv,
-#endif
-
-#if defined(NT35523_WSVGA_DSI_VDO_BOE)
-    &nt35523_wsvga_dsi_vdo_boe_lcm_drv,
-#endif
-
-#if defined(EK79023_DSI_WSVGA_VDO)
-    &ek79023_dsi_wsvga_vdo_lcm_drv,
-#endif
-
-#if defined(OTM9605A_QHD_DSI_VDO)
-	&otm9605a_qhd_dsi_vdo_drv,
-#endif
-
-#if defined(OTM1906A_FHD_DSI_CMD_AUTO)
-    &otm1906a_fhd_dsi_cmd_auto_lcm_drv,
-#endif
-
-#if defined(NT35532_FHD_DSI_VDO_SHARP)
-    &nt35532_fhd_dsi_vdo_sharp_lcm_drv,
-#endif
-
-#if defined(CLAP070WP03XG_LVDS_8163)
-    &clap070wp03xg_lvds_8163_lcm_drv,
-#endif
-
-#if defined(S6D7AA0_WXGA_DSI_VDO)
-    &s6d7aa0_wxga_dsi_vdo_lcm_drv,
-#endif
-
-#if defined(SY20810800210132_WUXGA_DSI_VDO)
-    &sy20810800210132_wuxga_dsi_vdo_lcm_drv,
-#endif
-
-#if defined(OTM1906B_FHD_DSI_CMD_JDI_TPS65132)
-    &otm1906b_fhd_dsi_cmd_jdi_tps65132_lcm_drv,
-#endif
-
-#if defined(HX8394C_WXGA_DSI_VDO)
-    &hx8394c_wxga_dsi_vdo_lcm_drv,
-#endif
-
-#if defined(IT6151_LP079QX1_EDP_DSI_VIDEO_8163EVB)
-    &it6151_lp079qx1_edp_dsi_video_8163evb_lcm_drv,
-#endif
-
-#if defined(NT35510_DSI_CMD)
-	&nt35510_dsi_cmd_lcm_drv,
-#endif
-
-#if defined(RM69032_DSI_CMD)
-	&rm69032_dsi_cmd_lcm_drv,
-#endif
-
-#if defined(ST7789H2_DBI)
-	&st7789h2_dbi_lcm_drv,
-#endif
 };
 
 #define LCM_COMPILE_ASSERT(condition) LCM_COMPILE_ASSERT_X(condition, __LINE__)
@@ -1126,7 +836,7 @@ static unsigned char lcd_id_pins_value = 0xFF;
 
 /******************************************************************************
 Function:       which_lcd_module_triple
-  Description:    read LCD ID PIN status,could identify three status:highlowfloat
+  Description:    read LCD ID PIN status,could identify three status:high¡¢low¡¢float
   Input:           none
   Output:         none
   Return:         LCD ID1|ID0 value
